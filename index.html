@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Kirk Von Hammett Toys</title>
+<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/jquery.lightbox-0.5.css" type="text/css" />
+<script type="text/javascript" src="assets/scripts/jQuery-1.7.2-min.js"></script>
+<script type="text/javascript" src="assets/scripts/jquery.lightbox-0.5.min.js"></script>
+</head>
+
+<body>
+	<div class="logoLink">&nbsp;</div>
+	<div class="menuBar">
+		<div class="firstMenuItem menuItem" id="about_div">
+			<a href="/"><img id="menu_about" src="assets/images/menu_home.png" /></a>
+		</div>
+		<div class="midMenuItem menuItem" id="toystore_div">
+			<img id="menu_toystore" src="assets/images/menu_toystore.png" />
+		</div>
+		<div class="midMenuItem menuItem" id="gallery_div">
+			<img id="menu_gallery" src="assets/images/menu_gallery.png" />
+		</div>
+		<div class="midMenuItem menuItem" id="events_div">
+			<img id="menu_events" src="assets/images/menu_events.png" />
+		</div>
+		<div class="lastMenuItem menuItem" id="contact_div">
+			<img id="menu_contact" src="assets/images/menu_contact.png" />
+		</div>
+	</div>	
+	<div class="figures">
+        <div style="position:relative; z-index:2; height:390px;"><a href="http://tinmanmerchandising.com/index.php?cPath=396_397&sort=3a&gridlist=grid&tplDir=KVHToys" target="_blank" style="border:0px;"><img src="assets/images/figures2.jpg"></a>
+		
+        <div style="position:relative; top:-370px; left:510px; z-index:3; width:230px;"><a href="http://www.fearfestevil.com" target="_blank"><img src="assets/images/fearfestevil2.png"></a></div>
+        <div style="position:relative; top:-365px; left:555px; z-index:4; width:230px;"><a href="https://www.facebook.com/events/397068500422562" target="_blank"><img src="assets/images/facebook.png"></a>&nbsp;<a href="https://twitter.com/FearFestEviL" target="_blank"><img src="assets/images/twitter.png"></a>&nbsp;<a href="http://youtu.be/yINsMlqYamA" target="_blank"><img src="assets/images/youtube.png"></a></div>
+    </div>
+    <div class="content homeContainer">
+		<div class="homePageContent">
+			<p>Welcome to the official Kirk Von Hammett Toys webpage.</p>
+			<p>Since he was five years old, Metallica's lead guitarist Kirk Hammett has been an avid lover of monster movies, mags, posters and toys. Now the time has come for Kirk to share that passion through his own exclusive line of unique collectables, Kirk Von Hammett Toys.</p>
+			<p>"These will be toys for people who are not only collectors, but who also just love to geek out on monster stuff!" says Kirk. "Every toy we sell will be from the belly of a proper toy-loving beast, and from one horror nerd to another, I hope you get as big a kick out of them as I do!"</p>
+			<p>We will be updating this page frequently so be sure to check back in for limited edition items, sales, events and over all ghoulish stuff!</p>
+			<p>KVH Toys…"It's alive! IT'S ALIVE!"</p>
+		</div>
+	</div>
+	<!--
+    <div style="margin-top:25px; margin-bottom:25px;">
+	<center><script type="text/javascript" src="http://content.bitsontherun.com/players/ySfDI6DV-T4YW46lE.js"></script></center>
+	</div>
+    -->
+	<div class="copyright">
+		Copyright &copy; 2015 Kirk Von Hammett Toys. All Rights Reserved. &nbsp;|&nbsp; Designed & Powered By <a href="http://teal.net" target="_blank">Teal Networks</a>
+	</div>
+</body>
+<script type="text/javascript">
+		setTimeout("showPage()",1000);
+	function showPage(){
+		$(".menuBar").fadeIn(150);
+		setTimeout("showMenuItems()",150);
+		setTimeout("showContent()",1100);
+	}
+	
+	function showMenuItems(){
+		setTimeout("$('#menu_about').fadeIn(40)",200);
+		setTimeout("$('#menu_events').fadeIn(40)",350);
+		setTimeout("$('#menu_toystore').fadeIn(40)",550);
+		setTimeout("$('#menu_gallery').fadeIn(40)",650);
+		setTimeout("$('#menu_contact').fadeIn(40)",750);
+	}
+	
+	function showContent(){
+		$(".content").fadeIn(300);
+		$(".copyright").fadeIn(300);
+	}
+	
+		
+	$(".menuItem").mouseenter(function(){
+		$(this).children("img").attr("src",$(this).children("img").attr("src").replace(".png","")+"_hover.png");
+	});
+	
+	$(".menuItem").mouseleave(function(){
+		$(this).children("img").attr("src",$(this).children("img").attr("src").replace("_hover",""));
+	});
+	
+	$(".logoLink").click(function(){
+		window.location.assign('http://kvhtoys.com');
+	});
+	
+	$("#about_div").click(function(){
+		window.location.assign('/');
+	});
+	
+	$("#toystore_div").click(function(){
+		window.location.assign('https://tinmanmerchandising.com/kvhtoys');
+	});
+	
+	$("#gallery_div").click(function(){
+		window.location.assign('gallery.html');
+	});
+	
+	$("#events_div").click(function(){
+		window.location.assign('events.html');
+	});
+	
+	$("#contact_div").click(function(){
+		window.location.assign('contact.html');
+	});
+</script>
+</html>

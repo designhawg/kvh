@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Kirk Von Hammett Toys</title>
+<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/jquery.lightbox-0.5.css" type="text/css" />
+<script type="text/javascript" src="assets/scripts/jQuery-1.7.2-min.js"></script>
+<script type="text/javascript" src="assets/scripts/jquery.lightbox-0.5.min.js"></script>
+</head>
+
+<body>
+	<div class="logoLink">&nbsp;</div>
+	<div class="menuBar">
+		<div class="firstMenuItem menuItem" id="about_div"><img id="menu_about" src="assets/images/menu_home.png" /></div>
+		<div class="midMenuItem menuItem" id="toystore_div"><img id="menu_toystore" src="assets/images/menu_toystore.png" /></div>
+		<div class="midMenuItem menuItem" id="gallery_div"><img id="menu_gallery" src="assets/images/menu_gallery.png" /></div>
+		<div class="midMenuItem menuItem" id="events_div"><img id="menu_events" src="assets/images/menu_events.png" /></div>
+		<div class="lastMenuItem menuItem" id="contact_div"><img id="menu_contact" src="assets/images/menu_contact.png" /></div>
+	</div><div class="content gallery-content">
+    	<div style="padding-top:15px; margin-left:-35px; font-size:1.4em; line-height:26px; text-align:center;">We're only just opening the Gallery for public viewing, so bear with us<br />
+    as we decide what's safe for your souls to process…in the meanwhile,<br />
+    a taste of what's to come!</div>
+		<a href="http://kvhtoys.com/assets/images/gallery/gallery1_big.png"><img src="assets/images/gallery/gallery1.png" /></a>
+		<a href="http://kvhtoys.com/assets/images/gallery/gallery2_big.png"><img src="assets/images/gallery/gallery2.png" /></a>
+		<a href="http://kvhtoys.com/assets/images/gallery/gallery5_big.png"><img src="assets/images/gallery/gallery5.png" /></a>
+</div>
+	
+	<script type="text/javascript">
+		$(function(){
+			$('.gallery-content a').lightBox({
+				fixedNavigation:true,
+				imageBtnClose: '/assets/images/lightbox/lightbox-btn-close.gif',
+				imageLoading: '/assets/images/lightbox/lightbox-ico-loading.gif',
+				imageBtnPrev: '/assets/images/lightbox/lightbox-btn-prev.gif',
+				imageBtnNext: '/assets/images/lightbox/lightbox-btn-next.gif'
+			});
+		});
+	</script>
+	<div class="copyright">
+		Copyright &copy; 2015 Kirk Von Hammett Toys. All Rights Reserved. &nbsp;|&nbsp; Designed & Powered By <a href="http://teal.net" target="_blank">Teal Networks</a>
+	</div>
+</body>
+<script type="text/javascript">
+			$(".menuBar").css("display","block");
+		$("#menu_about").css("display","block");
+		$("#menu_events").css("display","block");
+		$("#menu_toystore").css("display","block");
+		$("#menu_gallery").css("display","block");
+		$("#menu_contact").css("display","block");
+		$(".content").css("display","block");
+		$(".copyright").css("display","block");
+		
+	$(".menuItem").mouseenter(function(){
+		$(this).children("img").attr("src",$(this).children("img").attr("src").replace(".png","")+"_hover.png");
+	});
+	
+	$(".menuItem").mouseleave(function(){
+		$(this).children("img").attr("src",$(this).children("img").attr("src").replace("_hover",""));
+	});
+	
+	$(".logoLink").click(function(){
+		window.location.assign('http://kvhtoys.com');
+	});
+	
+	$("#about_div").click(function(){
+		window.location.assign('/');
+	});
+	
+	$("#toystore_div").click(function(){
+		window.location.assign('https://tinmanmerchandising.com/kvhtoys');
+	});
+	
+	$("#gallery_div").click(function(){
+		window.location.assign('/gallery');
+	});
+	
+	$("#events_div").click(function(){
+		window.location.assign('/events');
+	});
+	
+	$("#contact_div").click(function(){
+		window.location.assign('/contact');
+	});
+</script>
+</html>
