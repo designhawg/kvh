@@ -12,12 +12,22 @@
 <body>
 	<div class="logoLink">&nbsp;</div>
 	<div class="menuBar">
-		<div class="firstMenuItem menuItem" id="about_div"><img id="menu_about" src="assets/images/menu_home.png" /></div>
-		<div class="midMenuItem menuItem" id="toystore_div"><img id="menu_toystore" src="assets/images/menu_toystore.png" /></div>
-		<div class="midMenuItem menuItem" id="gallery_div"><img id="menu_gallery" src="assets/images/menu_gallery.png" /></div>
-		<div class="midMenuItem menuItem" id="events_div"><img id="menu_events" src="assets/images/menu_events.png" /></div>
-		<div class="lastMenuItem menuItem" id="contact_div"><img id="menu_contact" src="assets/images/menu_contact.png" /></div>
-	</div>	
+		<div class="firstMenuItem menuItem" id="about_div">
+			<a href="http://kvhtoys.com"><img id="menu_about" src="assets/images/menu_home.png" /></a>
+		</div>
+		<div class="midMenuItem menuItem" id="toystore_div">
+			<a href="https://tinmanmerchandising.com/kvhtoys"><img id="menu_toystore" src="assets/images/menu_toystore.png" /></a>
+		</div>
+		<div class="midMenuItem menuItem" id="gallery_div">
+			<a href="gallery.html"><img id="menu_gallery" src="assets/images/menu_gallery.png" /></a>
+		</div>
+		<div class="midMenuItem menuItem" id="events_div">
+			<a href="events.html"><img id="menu_events" src="assets/images/menu_events.png" /></a>
+		</div>
+		<div class="lastMenuItem menuItem" id="contact_div">
+			<a href="contact.html"><img id="menu_contact" src="assets/images/menu_contact.png" /></a>
+		</div>
+	</div>
     
     <div class="content event-content" style="font-size:0.9em">
     
@@ -129,26 +139,7 @@
 	$(".logoLink").click(function(){
 		window.location.assign('http://kvhtoys.com');
 	});
-	
-	$("#about_div").click(function(){
-		window.location.assign('/');
-	});
-	
-	$("#toystore_div").click(function(){
-		window.location.assign('https://tinmanmerchandising.com/kvhtoys');
-	});
-	
-	$("#gallery_div").click(function(){
-		window.location.assign('/gallery');
-	});
-	
-	$("#events_div").click(function(){
-		window.location.assign('/events');
-	});
-	
-	$("#contact_div").click(function(){
-		window.location.assign('/contact');
-	});
+
 </script>
 </html>                            
                             
