@@ -60,14 +60,6 @@
 		$("#menu_contact").css("display","block");
 		$(".content").css("display","block");
 		$(".copyright").css("display","block");
-		
-	$(".menuItem").mouseenter(function(){
-		$(this).children("img").attr("src",$(this).children("img").attr("src").replace(".png","")+"_hover.png");
-	});
-	
-	$(".menuItem").mouseleave(function(){
-		$(this).children("img").attr("src",$(this).children("img").attr("src").replace("_hover",""));
-	});
 	
 	$(".logoLink").click(function(){
 		window.location.assign('http://kvhtoys.com');
