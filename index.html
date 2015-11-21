@@ -27,12 +27,12 @@
 		<div class="lastMenuItem menuItem" id="contact_div">
 			<img id="menu_contact" src="assets/images/menu_contact.png" />
 		</div>
-	</div>	
+	</div>
 	<div class="figures">
         <div style="position:relative; z-index:2; height:390px;"><a href="http://tinmanmerchandising.com/index.php?cPath=396_397&sort=3a&gridlist=grid&tplDir=KVHToys" target="_blank" style="border:0px;"><img src="assets/images/figures2.jpg"></a>
-		
+
         <div style="position:relative; top:-370px; left:510px; z-index:3; width:230px;"><a href="http://www.fearfestevil.com" target="_blank"><img src="assets/images/fearfestevil2.png"></a></div>
-        <div style="position:relative; top:-365px; left:555px; z-index:4; width:230px;"><a href="https://www.facebook.com/events/397068500422562" target="_blank"><img src="assets/images/facebook.png"></a>&nbsp;<a href="https://twitter.com/FearFestEviL" target="_blank"><img src="assets/images/twitter.png"></a>&nbsp;<a href="http://youtu.be/yINsMlqYamA" target="_blank"><img src="assets/images/youtube.png"></a></div>
+        <div style="position:relative; top:-365px; left:555px; z-index:4; width:230px;"><a href="http://facebook.com/fearfestevil" target="_blank"><img src="assets/images/facebook.png"></a>&nbsp;<a href="https://twitter.com/FearFestEviL" target="_blank"><img src="assets/images/twitter.png"></a>&nbsp;<a href="http://youtu.be/yINsMlqYamA" target="_blank"><img src="assets/images/youtube.png"></a></div>
     </div>
     <div class="content homeContainer">
 		<div class="homePageContent">
@@ -49,7 +49,7 @@
 	</div>
     -->
 	<div class="copyright">
-		Copyright &copy; 2015 Kirk Von Hammett Toys. All Rights Reserved. &nbsp;|&nbsp; Designed & Powered By <a href="http://teal.net" target="_blank">Teal Networks</a>
+		Copyright &copy; 2015 Kirk Von Hammett Toys. All Rights Reserved.
 	</div>
 </body>
 <script type="text/javascript">
@@ -59,7 +59,7 @@
 		setTimeout("showMenuItems()",150);
 		setTimeout("showContent()",1100);
 	}
-	
+
 	function showMenuItems(){
 		setTimeout("$('#menu_about').fadeIn(40)",200);
 		setTimeout("$('#menu_events').fadeIn(40)",350);
@@ -67,41 +67,41 @@
 		setTimeout("$('#menu_gallery').fadeIn(40)",650);
 		setTimeout("$('#menu_contact').fadeIn(40)",750);
 	}
-	
+
 	function showContent(){
 		$(".content").fadeIn(300);
 		$(".copyright").fadeIn(300);
 	}
-	
-		
+
+
 	$(".menuItem").mouseenter(function(){
 		$(this).children("img").attr("src",$(this).children("img").attr("src").replace(".png","")+"_hover.png");
 	});
-	
+
 	$(".menuItem").mouseleave(function(){
 		$(this).children("img").attr("src",$(this).children("img").attr("src").replace("_hover",""));
 	});
-	
+
 	$(".logoLink").click(function(){
 		window.location.assign('http://kvhtoys.com');
 	});
-	
+
 	$("#about_div").click(function(){
 		window.location.assign('/');
 	});
-	
+
 	$("#toystore_div").click(function(){
 		window.location.assign('https://tinmanmerchandising.com/kvhtoys');
 	});
-	
+
 	$("#gallery_div").click(function(){
 		window.location.assign('gallery.html');
 	});
-	
+
 	$("#events_div").click(function(){
 		window.location.assign('events.html');
 	});
-	
+
 	$("#contact_div").click(function(){
 		window.location.assign('contact.html');
 	});
