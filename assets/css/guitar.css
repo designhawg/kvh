@@ -1,0 +1,80 @@
+body {
+	background-color: black;
+
+}
+
+.videoContainer
+{
+    position:absolute;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+		margin-top: -100px;
+}
+
+.videoContainer video
+{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/*video {
+	width: 100%;
+  height: auto;
+  max-height: 100%;
+}*/
+
+header {
+	z-index: 1;
+	position: relative;
+}
+
+.purple_overlay {
+	background-color: rgba(0,0,0,.5);
+	height: 100vh;
+	position: fixed;
+	z-index: -1;
+
+}
+
+.main_image {
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	z-index: -2;
+}
+
+.mainlogo {
+	width: 500px;
+	margin: -20px 0 0 20px;
+}
+
+nav {
+	background-color: rgba(0, 0, 0, .8);
+	height: 80px;
+	width: 100%;
+	border-bottom: 1px solid #000;
+}
+
+nav ul {
+	list-style-type: none;
+	float: right;
+}
+
+nav ul li {
+	line-height: 80px;
+	float: left;
+	display: block;
+	padding: 0 20px;
+	text-decoration: none;
+	margin-top: -17px;
+
+}
+
+nav ul li:hover {
+	background-color: green;
+}
+
+nav ul li a {
+	text-decoration: none;
+}
