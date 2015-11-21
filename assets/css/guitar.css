@@ -1,6 +1,28 @@
 body {
+	background-color: black;
 
 }
+
+.videoContainer
+{
+    position:absolute;
+    height:100%;
+    width:100%;
+    overflow: hidden;
+		margin-top: -100px;
+}
+
+.videoContainer video
+{
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/*video {
+	width: 100%;
+  height: auto;
+  max-height: 100%;
+}*/
 
 header {
 	z-index: 1;
