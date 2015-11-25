@@ -14,14 +14,16 @@
 			<ul>
 				<li><a href="#">About the guitars</a></li>
 				<li><a href="#">Photos</a></li>
-				<li><a href="#">Buy now!</a></li>
+				<li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=G6UFSN73U59RNs" target="_blank">Buy now!</a></li>
 			</ul>
 		</nav>
 	</header>
 
-	<div class="videoContainer">
-		<video autoplay>
-			<source src="assets/images/kvh_2014.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+	<div class="videoContainer mobilehide">
+		<video autoplay loop>
+			<!-- <source src="https://www.youtube.com/watch?v=PDGI-jxt6Lg&feature=youtu.be" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'> -->
+			<source src="https://s3.amazonaws.com/designhawg_funbucket/Nosferatu_LTD.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' >
+
 			<!-- <source src="video/trailer.webm" type='video/webm; codecs="vp8, vorbis"' />
 			Video not supported. -->
 		</video>
@@ -36,4 +38,12 @@
 		<!-- Links to other metallica assets/properties -->
 		<p>Copyright &copy; 2015 Kirk Von Hammett Toys. All Rights Reserved.</p>
 	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+	<script>
+		$('video').click(function(){
+			this[this.paused ? 'play' : 'pause']();
+		});
+	</script>
 </html>

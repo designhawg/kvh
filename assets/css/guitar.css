@@ -1,10 +1,8 @@
 body {
 	background-color: black;
-
 }
 
-.videoContainer
-{
+.videoContainer {
     position:absolute;
     height:100%;
     width:100%;
@@ -12,17 +10,10 @@ body {
 		margin-top: -100px;
 }
 
-.videoContainer video
-{
+.videoContainer video {
     min-width: 100%;
     min-height: 100%;
 }
-
-/*video {
-	width: 100%;
-  height: auto;
-  max-height: 100%;
-}*/
 
 header {
 	z-index: 1;
@@ -77,4 +68,12 @@ nav ul li:hover {
 
 nav ul li a {
 	text-decoration: none;
+}
+
+@media (max-width: 480px) {
+
+	.mobilehide {
+		display: none;
+	}
+
 }
