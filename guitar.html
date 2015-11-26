@@ -55,7 +55,10 @@
 
 	<script>
 		$('video').click(function(){
-			this[this.paused ? 'play' : 'pause']();
+			$(this).prop('muted', !$(this).prop('muted'));
+
+			// the old toggle paused the video. now it only mutes the video
+			// this[this.paused ? 'play' : 'pause']();
 		});
 
 		$('#meet').on('click', function(){
