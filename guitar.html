@@ -5,6 +5,8 @@
 		<title>Kirk Von Hammett Toys</title>
 		<link rel="stylesheet" href="assets/css/normalize.css" type="text/css" />
 		<link rel="stylesheet" href="assets/css/guitar.css" type="text/css" />
+		<script src="https://use.typekit.net/jng7qwh.js"></script>
+		<script>try{Typekit.load({ async: true });}catch(e){}</script>
 	</head>
 
 	<body>
@@ -12,9 +14,8 @@
 		<nav>
 			<img class="mainlogo" src="assets/images/kvh_logo.png" />
 			<ul>
-				<li><a href="#">About the guitars</a></li>
-				<li><a href="#">Photos</a></li>
-				<li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=G6UFSN73U59RNs" target="_blank">Buy now!</a></li>
+				<li id="meet"><a href="#">Meet Nosferatu</a></li>
+				<li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=G6UFSN73U59RNs" target="_blank"><li>Buy Nosferatu</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -30,8 +31,19 @@
 	</div>
 
 	<!-- not showing up yet -->
-	<div class="main">
+	<!-- <div class="main">
 		<h1>Your source for the scariest damn toys on Earth.</h1>
+	</div> -->
+
+	<div id="guitar-details">
+		<h2>ESP LTD Kirk Hammett</h2>
+		<h1>Nosferatu</h1>
+		<p>Limited Edition of 11</p>
+		<p>Each guitar hand numbered and signed by Kirk</p>
+		<p>Photo of Kirk with your actual guitar</p>
+		<p>Limited Edition Basil Gogos giclée of Nosferatu signed by Basil Gogos</p>
+		<p>Limited Edition Famous Zombies Jr Kirk Von Hammett Zombie AKA “Lil Kirk”</p>
+		<p>Certificate of Authenticity signed by Kirk</p>
 	</div>
 
 	<footer>
@@ -45,5 +57,10 @@
 		$('video').click(function(){
 			this[this.paused ? 'play' : 'pause']();
 		});
+
+		$('#meet').on('click', function(){
+			$('#guitar-details').fadeToggle( "slow", "linear" );
+		});
+
 	</script>
 </html>

@@ -41,7 +41,7 @@ header {
 }
 
 nav {
-	background-color: rgba(0, 0, 0, .8);
+	background-color: rgba(77, 25, 117, .3);
 	height: 80px;
 	width: 100%;
 	border-bottom: 1px solid #000;
@@ -50,24 +50,58 @@ nav {
 nav ul {
 	list-style-type: none;
 	float: right;
+	/*background-color: #4d1975;*/
 }
 
 nav ul li {
+	font-family: "metalista-web";
+	font-size: 2em;
 	line-height: 80px;
 	float: left;
-	display: block;
-	padding: 0 20px;
-	text-decoration: none;
 	margin-top: -17px;
-
 }
 
-nav ul li:hover {
-	background-color: green;
+nav ul li a {
+	display: block;
+	line-height: 80px;
+	padding: 0 20px;
+	color: #bbb;
+}
+
+nav ul li a:hover {
+	background-color: #4d1975;
+	color: #000;
 }
 
 nav ul li a {
 	text-decoration: none;
+}
+
+#guitar-details {
+	z-index: 2;
+	position: relative;
+	font-family: sans-serif;
+	color: #fff;
+	width: 40%;
+	margin-left: 5%;
+	margin-top: 200px;
+	display: none;
+	font-family: "proxima-nova", sans-serif;
+}
+
+#guitar-details h2 {
+	font-family: "metalista-web";
+	font-weight: 400;
+	font-size: 3em;
+	margin: 0;
+}
+
+#guitar-details h1 {
+	font-family: "metalista-web";
+	font-weight: 400;
+	font-size: 8em;
+	margin: -20px 0 0 0;
+
 }
 
 @media (max-width: 480px) {
