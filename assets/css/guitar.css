@@ -25,7 +25,6 @@ header {
 	height: 100vh;
 	position: fixed;
 	z-index: -1;
-
 }
 
 .main_image {
@@ -36,8 +35,9 @@ header {
 }
 
 .mainlogo {
-	width: 500px;
-	margin: -20px 0 0 20px;
+	width: 300px;
+	margin: 0 auto;
+	display: block;
 }
 
 nav {
@@ -104,10 +104,24 @@ nav ul li a {
 
 }
 
-@media (max-width: 480px) {
+@media (min-width: 1000px) {
+	.mainlogo {
+		width: 500px;
+		margin: 0 0 20px;;
+		display: inline-block;
+	}
+}
 
+@media (min-width: 600px) {
+	.mainlogo {
+		width: 430px;
+		margin: -20px 0 0 20px;
+		display: inline-block;
+	}
+}
+
+@media (max-width: 480px) {
 	.mobilehide {
 		display: none;
 	}
-
 }
