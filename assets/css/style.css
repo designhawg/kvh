@@ -19,7 +19,34 @@
 	src: url("../fonts/alegreya_black.otf");
 }
 
-body{
+.guitar {
+	width: 80%;
+	margin: 100px auto 0px auto;
+	overflow: hidden;
+}
+
+.guitar-wide {
+	width: 100%;
+}
+
+.guitar h3 {
+	font-family: "metalista-web";
+	font-size: 4em;
+	font-weight: 100;
+	text-align: center;
+	margin-top: 0px;
+	margin-bottom: 100px;
+}
+
+.guitar h3 a {
+	color: #fff;
+}
+
+.guitar h3 a:hover {
+	color: #4d1975;
+}
+
+body {
 	background-color: #000000;
 	background-image:url('../images/bglogo.png');
 	background-position:top center;
