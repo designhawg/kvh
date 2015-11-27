@@ -130,16 +130,16 @@ nav ul li a {
 	}
 	.videoContainer {
 	    position:absolute;
-	    height:120%;
-	    width:120%;
+	    height:100%;
+	    width:100%;
 	    overflow: hidden;
 			margin-top: -180px;
 			background-size: cover;
 			background: transparent url('../images/guitar_bw.jpg') no-repeat 0 0;
 	}
 	.videoContainer video {
-	    min-width: 120%;
-	    min-height: 120%;
+	    min-width: 100%;
+	    min-height: 100%;
 	}
 	nav {
 		background-color: rgba(0,0,0, .6);
