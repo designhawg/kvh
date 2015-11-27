@@ -241,6 +241,7 @@ nav ul li a {
 	    overflow: hidden;
 			background-size: cover;
 			background: transparent url('../images/guitar_bw.jpg') no-repeat 0 0;
+			margin-top: -100px;
 	}
 	.videoContainer video {
 	    min-width: 100%;
