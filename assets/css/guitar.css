@@ -2,12 +2,29 @@ body {
 	background-color: black;
 }
 
+.play {
+	position: absolute;
+	z-index: 10;
+	height: 80px;
+	color: white;
+}
+
+.play svg {
+	display: block;
+	width: 50;
+	height: 50;
+	color: white;
+}
+
 .videoContainer {
-    position:absolute;
-    height:100%;
-    width:100%;
+    /*position: absolute;*/
+    width: 90%;
+		height: auto;
     overflow: hidden;
-		margin-top: -100px;
+		margin: 0 auto;
+		background: transparent url('../images/guitar_bw.jpg') no-repeat 0 0;
+		/*background-size: 100%;*/
+   	background-size:cover;
 }
 
 .videoContainer video {
@@ -36,12 +53,13 @@ header {
 
 .mainlogo {
 	width: 300px;
+	padding-top: 20px;
 	margin: 0 auto;
 	display: block;
 }
 
 nav {
-	/*background-color: rgba(77, 25, 117, .3);*/
+	background-color: rgba(0,0,0, 0);
 	height: 80px;
 	width: 100%;
 	border-bottom: 1px solid #000;
@@ -70,7 +88,7 @@ nav ul li a {
 
 nav ul li a:hover {
 	/*background-color: #4d1975;*/
-	color: #000;
+	color: #4d1975;
 }
 
 nav ul li a {
@@ -110,6 +128,25 @@ nav ul li a {
 		margin: 0 0 20px;
 		display: inline-block;
 	}
+	.videoContainer {
+	    position:absolute;
+	    height:120%;
+	    width:120%;
+	    overflow: hidden;
+			margin-top: -180px;
+			background-size: cover;
+			background: transparent url('../images/guitar_bw.jpg') no-repeat 0 0;
+	}
+	.videoContainer video {
+	    min-width: 120%;
+	    min-height: 120%;
+	}
+	nav {
+		background-color: rgba(0,0,0, .6);
+		height: 80px;
+		width: 100%;
+		border-bottom: 1px solid #000;
+	}
 }
 
 @media (min-width: 600px) {
@@ -121,7 +158,7 @@ nav ul li a {
 }
 
 @media (max-width: 480px) {
-	.mobilehide {
+	/*.mobilehide {
 		display: none;
-	}
+	}*/
 }

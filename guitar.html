@@ -16,19 +16,27 @@
 		<nav>
 			<a href="/"><img class="mainlogo" src="assets/images/kvh_logo.png" /></a>
 			<ul>
+				<li id="play"><a href="#">Play Video</a></li>
 				<li id="meet"><a href="#">Meet Nosferatu</a></li>
+
 				<li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=G6UFSN73U59RNs" target="_blank"><li>Buy Nosferatu</a></li>
 			</ul>
 		</nav>
 	</header>
 
-	<div class="videoContainer mobilehide">
-		<video autoplay loop>
-			<!-- <source src="https://www.youtube.com/watch?v=PDGI-jxt6Lg&feature=youtu.be" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'> -->
+	<div class="play">
+		<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+			 viewBox="0 0 80 88" style="enable-background:new 0 0 80 88;" xml:space="preserve">
+		<style type="text/css">
+			.st0{fill:#FFFFFF;}
+		</style>
+		<path class="st0" d="M0,44l0-29.7C0,3.3,11.9-3.6,21.4,1.9l25.7,14.9l25.7,14.9c9.5,5.5,9.5,19.2,0,24.7L47.1,71.2L21.4,86.1
+			C11.9,91.6,0,84.7,0,73.7L0,44z"/>
+		</svg>
+	</div>
+	<div class="videoContainer">
+		<video loop width="100%" poster="../images/guitar_bw.jpg">
 			<source src="https://s3.amazonaws.com/designhawg_funbucket/Nosferatu_LTD.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' >
-
-			<!-- <source src="video/trailer.webm" type='video/webm; codecs="vp8, vorbis"' />
-			Video not supported. -->
 		</video>
 	</div>
 
@@ -57,11 +65,17 @@
 
 	<script>
 		$('video').click(function(){
+			// this[this.paused ? 'play' : 'pause']();
 			$(this).prop('muted', !$(this).prop('muted'));
 
 			// the old toggle paused the video. now it only mutes the video
-			// this[this.paused ? 'play' : 'pause']();
 		});
+
+		$('#play').click(function(){
+			$('video').get(0).play();
+			$('#play').css('display','none');
+		});
+
 
 		$('#meet').on('click', function(){
 			$('#guitar-details').fadeToggle( "slow", "linear" );
