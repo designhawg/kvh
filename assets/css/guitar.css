@@ -230,7 +230,7 @@ nav ul li a {
 
 	.mainlogo {
 		width: 400px;
-		margin: 0 0 0 20px;
+		margin: 0 0 0 3%;
 		display: inline-block;
 		float: left;
 	}
@@ -265,8 +265,8 @@ nav ul li a {
 		font-family: sans-serif;
 		color: #fff;
 		width: 60%;
-		margin-left: 5%;
-		margin-top: 200px;
+		margin-left: 3%;
+		margin-top: 100px;
 		display: none;
 		font-family: "proxima-nova", sans-serif;
 		padding-bottom: 50px;
