@@ -21,7 +21,7 @@
 					<div class="mobilecenter">
 						<ul>
 							<li id="play"><a href="#">Play Video</a></li>
-							<li id="meet" class=""><a href="#">Meet Nosferatu</a></li>
+							<li id="meet" class="mobile"><a href="#">Meet Nosferatu</a></li>
 
 							<li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2R24PRU7U5JHG" target="_blank"><li>Buy Nosferatu</a></li>
 						</ul>
@@ -73,8 +73,8 @@
 			$('video').get(0).play();
 			$('#play').css('display','none');
 			$('.kirkback').css('display', 'none');
+			$('.videoContainer').css('background', 'none');
 		});
-
 
 		$('#meet').on('click', function(){
 			$('#guitar-details').fadeToggle( "slow", "linear" );
