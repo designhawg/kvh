@@ -20,17 +20,20 @@
 					<a href="/"><img class="mainlogo" src="assets/images/kvh_logo.png" /></a>
 					<div class="mobilecenter">
 						<ul>
-							<li id="play"><a href="#">Play Video</a></li>
-							<li id="meet" class="mobile"><a href="#">Meet Nosferatu</a></li>
-
-							<li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2R24PRU7U5JHG" target="_blank"><li>Buy Nosferatu</a></li>
+							<li id="play"><a href="#1">Play Video</a></li>
+							<li id="meet" class="mobile"><a href="#1">Meet Nosferatu</a></li>
+							<li id="meet2" class=""><a href="#1">Buy Nosferatu</a></li>
 						</ul>
 					</div>
 				</nav>
+				<ul class="options">
+					<li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=42GWL4L9XHJDY">Continental US buyer</a></li>
+					<li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=WEH4LV62Q6RRA">All others</a></li>
+				</ul>
 			</header>
 
 			<div class="videoContainer">
-				<video loop poster='../images/guitar_bw.jpg'>
+				<video loop poster='#'>
 					<source src="https://s3.amazonaws.com/designhawg_funbucket/Nosferatu_LTD.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' >
 				</video>
 			</div>
@@ -74,6 +77,20 @@
 			$('#play').css('display','none');
 			$('.kirkback').css('display', 'none');
 			$('.videoContainer').css('background', 'none');
+		});
+
+		// $('.meet2').click(function(){
+		// 	// event.preventDefault();
+		// 	console.log('working');
+		// 	$('.options').toggle();
+		// });
+
+		$('#meet2').on('click', function(){
+			if ( $( ".options" ).is( ":hidden" ) ) {
+		    $( ".options" ).slideToggle( "slow" );
+		  } else {
+		    $( ".options" ).slideToggle( "slow" );
+		  }
 		});
 
 		$('#meet').on('click', function(){

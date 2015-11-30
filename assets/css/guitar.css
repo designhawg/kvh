@@ -32,6 +32,43 @@ body {
 	color: white;
 }
 
+.options {
+	/*position: absolute;*/
+	z-index: 10;
+	width: 100%;
+	top: 140px;
+	background-color: #fff;
+	display: none;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+ul.options {
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+.options li a {
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	padding: 20px;
+	background-color: #4d1975;
+	color: #fff;
+}
+
+.options li a:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+.options li a:active {
+	background-color: #000;
+	color: #fff;
+}
+
+
+
 .videoContainer {
     /*position: absolute;*/
 		padding-top: -100px;
@@ -75,7 +112,7 @@ header {
 }
 
 nav {
-	height: 80px;
+	height: 163px;
 	width: 100%;
 	border-bottom: 1px solid #000;
 }
@@ -104,7 +141,7 @@ nav ul li {
 
 }
 
-nav ul li a {
+nav ul li, nav ul li a {
 	display: block;
 	line-height: 80px;
 	padding: 0 10px;
@@ -184,7 +221,7 @@ nav ul li a {
 	}
 	nav {
 		background-color: rgba(0,0,0, 1);
-		height: 250px;
+		height: 215px;
 		width: 100%;
 		border-bottom: none;
 		background-color: none;
@@ -239,6 +276,20 @@ nav ul li a {
 		display: block;
 	}
 
+	.options {
+		position: absolute;
+		z-index: 10;
+		width: 20%;
+		top: 65px;
+		left: 80%;
+		background-color: #fff;
+		display: none;
+	}
+
+	.options li a {
+		text-align: right;
+	}
+
 	.notmobile {
 		display: block;
 	}
@@ -266,7 +317,7 @@ nav ul li a {
 	    overflow: hidden;
 			background-size: cover;
 			background: transparent url('../images/guitar_bw.jpg') no-repeat 0 0;
-			margin-top: -50px;
+			margin-top: -80px;
 	}
 	.videoContainer video {
 	    min-width: 100%;
@@ -277,6 +328,8 @@ nav ul li a {
 		height: 80px;
 		width: 100%;
 		border-bottom: 1px solid #000;
+		z-index: 20;
+		position: relative;
 	}
 	nav ul {
 		list-style-type: none;
