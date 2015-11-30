@@ -133,7 +133,7 @@ nav ul {
 
 nav ul li {
 	font-family: "metalista-web";
-	font-size: 2em;
+	font-size: 1.5em;
 	line-height: 80px;
 	float: left;
 	margin-top: -17px;
@@ -190,6 +190,16 @@ nav ul li a {
 
 
 @media (min-width: 768px) {
+
+	nav ul li {
+		font-family: "metalista-web";
+		font-size: 2em;
+		line-height: 80px;
+		float: left;
+		margin-top: -17px;
+		display: inline-block;
+
+	}
 
 	.mobile {
 		display: block;
