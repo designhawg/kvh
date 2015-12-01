@@ -8,6 +8,11 @@ body {
 	display: none;
 }
 
+li#meet2 {
+	color: #ff0000;
+	padding-right: 5%;
+}
+
 .skull {
 	display: inline-block;
   text-indent: -9999px;
